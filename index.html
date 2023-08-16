@@ -1,28 +1,35 @@
+
 <!DOCTYPE html>
-<html lang="en" style="--background: url(https://agentseed.org/imgs/dark.png),url(https://images.unsplash.com/photo-1658457459792-f4dfe37407ca?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1&amp;q=80);" class=" xibjoswzc idc0_343"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="School%20dashboard_files/multiple.css" integrity="sha512-oXriCA6uhRjv4Lk/s7ViqAnb6SMDN4Bzaup0ijGV9GdpKtJ202SZhwtqDSq5YB45gVfVwnDjMqg2KeST2HCKgg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/multiple.js/0.0.1/multiple.css"
+            integrity="sha512-oXriCA6uhRjv4Lk/s7ViqAnb6SMDN4Bzaup0ijGV9GdpKtJ202SZhwtqDSq5YB45gVfVwnDjMqg2KeST2HCKgg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <title>School dashboard</title>
-    <style>.bg.multiple-desktop{background-image:var(--background)}</style></head>
+    </head>
     <body onload="changeBackground()">
         <div class="container">
-            <div class="card overseerr bg noclick multiple-desktop">
+            <div class="card overseerr bg noclick">
                 <form method="get" action="https://www.google.com/search" id="search-parent">
-                    <input type="text" name="q" size="31" placeholder="Search..." id="searchbox" autofocus="">
+                    <input type="text" name="q" size="31" value="" placeholder='Search...' id="searchbox" autofocus />
                 </form>
             </div>
-            <div class="card-effect card plex bg multiple-desktop" onclick="document.location='https:/\/nmsfta.powerschool.com'"><span class="text">Powerschool</span></div>
-            <div class="card-effect card jackett bg multiple-desktop" onclick="document.location='http:/\/nmsa.instructure.com'"><span class="text">Canvas</span></div>
-            <div class="card-effect card radarr bg multiple-desktop" onclick="document.location='http:/\/mail.google.com/mail/u/0/#inbox'"><span class="text">Email</span></div>
-            <div class="card-effect card sonarr bg multiple-desktop" onclick="document.location='http:/\/vscode.dev'"><span class="text">Vs Code</span></div>
-            <div class="card-effect card server bg multiple-desktop" onclick="document.location='https:/\/drive.google.com/drive/u/0'"><span class="text">Drive</span></div>
-            <div class="card-effect card deluge bg multiple-desktop" onclick="document.location='http:/\/app.plex.tv'"><span class="text">Plex</span></div>
+            <div class="card-effect card plex bg" onclick="document.location='https:/\/nmsfta.powerschool.com'"><span class="text">Powerschool</span></div>
+            <div class="card-effect card jackett bg" onclick="document.location='http:/\/nmsa.instructure.com'"><span class="text">Canvas</span></div>
+            <div class="card-effect card radarr bg" onclick="document.location='http:/\/mail.google.com/mail/u/0/#inbox'"><span class="text">Email</span></div>
+            <div class="card-effect card sonarr bg" onclick="document.location='http:/\/vscode.dev'"><span class="text">Vs Code</span></div>
+            <div class="card-effect card server bg" onclick="document.location='https:/\/drive.google.com/drive/u/0'"><span class="text">Drive</span></div>
+            <div class="card-effect card deluge bg" onclick="document.location='http:/\/app.plex.tv'"><span class="text">Plex</span></div>
         </div>
-    
-
+    </body>
+</html>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Titillium+Web&display=swap');
     body, html {
@@ -137,17 +144,23 @@
         grid-area: 5 / 4 / 6 / 7;
     }
 </style>
-<script src="School%20dashboard_files/multiple.min.js" integrity="sha512-h7sEAeLJrgSKuLDecT6NeHSUlbSwpS30IqGu21caM/sa//cWhp5J5D+MOZ0C5QM4GbJlZeEY1ZXXGVtI5m1arg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/multiple.js/0.0.1/multiple.min.js"
+    integrity="sha512-h7sEAeLJrgSKuLDecT6NeHSUlbSwpS30IqGu21caM/sa//cWhp5J5D+MOZ0C5QM4GbJlZeEY1ZXXGVtI5m1arg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+></script>
 <script>
     var backgrounds = [
-        "https://images.unsplash.com/photo-1692026187565-5cd1ac9a4f5a",
+        "https://images.unsplash.com/photo-1692026187565-5cd1ac9a4f5a"
+        "https://agentseed.org/119544-anime-anime-girls-city-skyscraper-Girl-With-Weapon-sniper-rifle-dusk.jpg"
     ];
     var bg = "";
     var backgroundLength = backgrounds.length;
     let root = document.documentElement;
     function changeBackground() {
         var num = randomNumber(backgroundLength);
-        bg = " url(" + backgrounds[num] + ")";
+        bg = "url(" + backgrounds[num] + ")";
         root.style.setProperty("--background", bg);
     }
     function randomNumber(max) {
@@ -158,4 +171,3 @@
         background: "var(--background)",
     });
 </script>
-</body></html>
