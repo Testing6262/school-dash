@@ -147,7 +147,7 @@
     let root = document.documentElement;
     function changeBackground() {
         var num = randomNumber(backgroundLength);
-        bg = " url(https://agentseed.org/imgs/dark.png)," + "url(" + backgrounds[num] + ")";
+        bg = " url(" + backgrounds[num] + ")";
         root.style.setProperty("--background", bg);
     }
     function randomNumber(max) {
